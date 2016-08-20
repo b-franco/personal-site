@@ -1,0 +1,21 @@
+{
+  "name": "brecht-franco.be",
+  "homepage": "https://github.com/b-franco/personal-site",
+  "authors": [
+    "Brecht Franco <brecht@yappa.be>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "font-awesome": "^4.6.3"
+  }
+}

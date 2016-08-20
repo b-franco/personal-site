@@ -1,0 +1,12 @@
+prod:
+  host: brecht-franco.be
+  user: root
+  stage: production
+  deploy_path: /var/www/apps/site
+  branch: master
+  forward_agent: true
+  keep_releases: 3
+  env: prod
+  identity_file:
+      public_key:  ~/.ssh/id_rsa.pub
+      private_key: ~/.ssh/id_rsa

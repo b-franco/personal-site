@@ -4,7 +4,7 @@ var gulp = require('gulp'),
     bower = require('gulp-bower');
 
 var config = {
-    sassPath: './resources/sass',
+    sassPath: './app/resources/assets/sass',
     bowerDir: './bower_components'
 }
 
@@ -15,14 +15,14 @@ gulp.task('bower', function() {
 
 gulp.task('icons', function() {
     return gulp.src(config.bowerDir + '/font-awesome/fonts/**.*')
-        .pipe(gulp.dest('./public/fonts'));
+        .pipe(gulp.dest('./web/fonts'));
 });
 
 gulp.task('css', function() {
     return sass(config.sassPath + '/style.scss', {
         style: 'compressed',
         loadPath: [
-            './resources/sass',
+            config.sassPath,
             config.bowerDir + '/bootstrap-sass/assets/stylesheets',
             config.bowerDir + '/font-awesome/scss',
         ]
@@ -30,7 +30,7 @@ gulp.task('css', function() {
     .on("error", notify.onError(function (error) {
         return "Error: " + error.message;
     }))
-    .pipe(gulp.dest('./public/css'));
+    .pipe(gulp.dest('./web/css'));
 });
 
 // Rerun the task when a file changes
