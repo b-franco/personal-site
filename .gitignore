@@ -1,0 +1,35 @@
+# Managed by Composer
+/bin/*
+!bin/console
+!bin/symfony_requirements
+/vendor
+/_vendor
+
+# PHPUnit
+/app/phpunit.xml
+/phpunit.xml
+
+# Docker compose
+docker-compose.yml
+
+# Build data
+/build/
+
+# Composer PHAR
+/composer.phar
+
+# Netbeans
+/nbproject/
+
+# phpintel
+.phpintel/
+
+# Mac Stuff
+._*
+.DS_Store
+._.DS_Store
+/.idea/
+
+# Frontend stuff
+.sass-cache
+bower_components
