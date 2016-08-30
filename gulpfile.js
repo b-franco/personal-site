@@ -18,13 +18,18 @@ gulp.task('icons', function() {
         .pipe(gulp.dest('./web/fonts'));
 });
 
+gulp.task('fonts', function() {
+    return gulp.src(config.bowerDir + '/materialize/fonts/*/**.*')
+        .pipe(gulp.dest('./web/fonts'));
+});
+
 gulp.task('css', function() {
     return sass(config.sassPath + '/style.scss', {
         style: 'compressed',
         loadPath: [
             config.sassPath,
-            config.bowerDir + '/bootstrap-sass/assets/stylesheets',
             config.bowerDir + '/font-awesome/scss',
+            config.bowerDir + '/materialize/sass',
         ]
     })
     .on("error", notify.onError(function (error) {

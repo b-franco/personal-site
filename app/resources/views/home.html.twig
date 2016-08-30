@@ -1,5 +1,66 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-  derp
+  <div class="container">
+    <header class="section">
+      <div class="valign-wrapper">
+        <img id="header-image" src="/image/brecht2.jpg" class="circle"/>
+        <div id="header-text">
+          <h1>Brecht Franco</h1>
+          <h2>PHP Developer</h2>
+        </div>
+
+      </div>
+    </header>
+  </div>
+  <div id="about">
+    <div class="container section">
+      <div class="row">
+        <div class="col m7">
+          <h3>PHP/Symfony Web Development</h3>
+          <p>
+            I'm a Belgian PHP developer and mostly use Symfony as my framework of choice.
+            My focus lies with web applications and e-commerce, stand-alone or with third-party (ERP/CRM/...) integrations.
+          </p>
+        </div>
+        <div class="col m5">
+          <h3>Contact</h3>
+          <p>
+            If you have an interesting project that you think I would be interested in, or you just want to say "Hi", feel free to contact me!
+          </p>
+          <p>
+            <a class="waves-effect waves-light btn">Contact me</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="skillset" class="container section">
+    <h3 class="header">Skillset</h3>
+    <div class="row">
+      <div class="col s12 m6">
+        <div class="skill-item"><span class="chip">PHP</span> OOP/MVC</div>
+        <div class="skill-item"><span class="chip">Frameworks</span> Symfony, Silex, Laravel, CakePHP</div>
+        <div class="skill-item"><span class="chip">Database</span> MySQL, Redis, MongoDB</div>
+        <div class="skill-item"><span class="chip">Javascript</span> jQuery, basic node.js and Angular</div>
+        <div class="skill-item"><span class="chip">HTML</span> Twig, Smarty</div>
+        <div class="skill-item"><span class="chip">CSS</span> Sass, Less</div>
+        <div class="skill-item"><span class="chip">Task runners</span> Gulp</div>
+      </div>
+      <div class="col s12 m6">
+        <div class="skill-item"><span class="chip">Deployment</span> Capistrano, Deployer</div>
+        <div class="skill-item"><span class="chip">Testing</span> PHPUnit, Behat</div>
+        <div class="skill-item"><span class="chip">Version control</span> Git, SVN</div>
+        <div class="skill-item"><span class="chip">Server</span> Apache, Nginx, Linux, Docker, Vagrant</div>
+        <div class="skill-item"><span class="chip">Search</span> Elasticsearch / ELK stack</div>
+        <div class="skill-item"><span class="chip">Job/Message queue</span> RabbitMQ, Gearman</div>
+      </div>
+    </div>
+  </div>
+  <footer id="footer">
+    <div class="container section">
+      Test
+    </div>
+  </footer>
+
 {% endblock %}

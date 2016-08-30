@@ -1,2 +1,98 @@
-@import "bootstrap";
+$button-raised-background: #31393C;
+$button-raised-background-hover: #F0F0F0;
+$button-raised-color: #F0F0F0;
+$gutter-width: 6rem;
+
+@import "materialize";
 @import "font-awesome";
+
+body {
+  background-color: #FEFEFE;
+  color: #31393C;
+  overflow-x: hidden;
+}
+
+.light {
+  color: #546063;
+}
+
+img {
+  max-width: 100%;
+}
+
+header {
+  overflow: hidden;
+  #header-image {
+    width: 100px;
+    float: left;
+    margin-right: $gutter-width / 2;
+  }
+  #header-text{
+    width: auto;
+    float: none;
+  }
+  h2 {
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-top: 0;
+    font-weight: 200;
+    color: #7b8f97;
+  }
+  h1 {
+    font-weight: 300;
+    font-size: 36px;
+    margin-bottom: 0;
+  }
+}
+
+@media #{$medium-and-up} {
+  header {
+    #header-image {
+      width: 150px;
+    }
+  }
+}
+
+#about {
+  background-color: #F0F0F0;
+  color: #31393C;
+  font-weight: 300;
+  h3 {
+    font-weight: 200;
+    &:after {
+      content: '';
+      border-bottom: 1px solid #31393C;
+      width: 25%;
+      display: block;
+      margin-top: 0.5em;
+    }
+  }
+}
+
+#skillset {
+  h3 {
+    font-weight: 200;
+  }
+  .skill-item {
+    padding: 0.5em 0;
+    border-bottom: 1px solid #e4e4e4;
+    line-height: 32px;
+    .chip {
+      float: left;
+      margin-bottom: 0;
+    }
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
+
+.btn {
+  &:hover {
+    color: #31393C;
+  }
+}
+
+#footer {
+  background-color: #31393C;
+}
