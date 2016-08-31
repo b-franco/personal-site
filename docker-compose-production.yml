@@ -2,3 +2,4 @@ web:
     build: ../docker-site
     environment:
         DNSDOCK_ALIAS: brecht-franco.docker
+        VIRTUAL_HOST: brecht-franco.be
